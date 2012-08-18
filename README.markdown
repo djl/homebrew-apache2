@@ -5,11 +5,3 @@ homebrew-apache2
 
 [h]: https://github.com/mxcl/homebrew
 [a]: https://httpd.apache.org/
-
-
-
-INSTALL
--------
-
-    $ brew tap djl/homebrew-apache2
-    $ brew install apache22
