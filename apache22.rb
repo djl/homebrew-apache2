@@ -17,6 +17,8 @@ class Apache22 < Formula
       "--with-mpm=prefork",
       "--with-included-apr",
       "--enable-mods-shared=all",
+      "--enable-proxy",
+      "--enable-ssl",
     ]
     system './configure', *args
     system "make"
