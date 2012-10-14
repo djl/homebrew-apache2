@@ -9,6 +9,8 @@ class Apache24 < Formula
 
   skip_clean ['bin', 'sbin']
 
+  depends_on 'pcre'
+
   # Apache 2.4 no longer bundles apr or apr-util so we have to fetch
   # it manually for each build
   def fetch_apr
