@@ -2,9 +2,9 @@ require 'formula'
 
 class Apache22 < Formula
   homepage 'https://httpd.apache.org/'
-  url 'https://www.apache.org/dist/httpd/httpd-2.2.22.tar.gz'
-  sha1 'bf3bbfda967ac900348e697f26fe86b25695efe9'
-  version '2.2.22'
+  url 'https://www.apache.org/dist/httpd/httpd-2.2.23.tar.gz'
+  sha1 '966445d503ecb72e3eadf864cd21028d00d441a2'
+  version '2.2.23'
 
   skip_clean ['bin', 'sbin']
 
