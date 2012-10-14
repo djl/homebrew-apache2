@@ -9,5 +9,6 @@ homebrew-apache2
 **Installation**
 
     brew tap djl/homebrew-apache2
-    brew install apache24.rb
+    brew install djl/apache2/apache22
+    brew install djl/apache2/apache24
 
