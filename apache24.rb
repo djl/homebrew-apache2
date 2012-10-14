@@ -3,9 +3,9 @@ require 'formula'
 
 class Apache24 < Formula
   homepage 'https://httpd.apache.org/'
-  url 'https://www.apache.org/dist/httpd/httpd-2.4.2.tar.gz'
-  sha1 'fc168decb5eb6f68d89601e9aa899fa46f355c1d'
-  version '2.4.2'
+  url 'https://www.apache.org/dist/httpd/httpd-2.4.3.tar.gz'
+  sha1 '845ca56816b0352c7759b6b8f47bd012c0864efd'
+  version '2.4.3'
 
   skip_clean ['bin', 'sbin']
 
@@ -31,6 +31,7 @@ class Apache24 < Formula
       "--with-mpm=prefork",
       "--with-included-apr",
       "--enable-mods-shared=all",
+      "--with-pcre=#{Formula.factory('pcre').prefix}",
     ]
     system './configure', *args
     system "make"
