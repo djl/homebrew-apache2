@@ -1,3 +1,4 @@
+require 'fileutils'
 require 'formula'
 
 class Apache22 < Formula
@@ -23,5 +24,8 @@ class Apache22 < Formula
     system './configure', *args
     system "make"
     system "make install"
+
+    # create logs directory
+    FileUtils.mkpath "#{prefix}/logs"
   end
 end

@@ -38,5 +38,8 @@ class Apache24 < Formula
     system './configure', *args
     system "make"
     system "make install"
+
+    # create logs directory
+    FileUtils.mkpath "#{prefix}/logs"
   end
 end
