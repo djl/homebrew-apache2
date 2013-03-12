@@ -3,9 +3,9 @@ require 'formula'
 
 class Apache24 < Formula
   homepage 'https://httpd.apache.org/'
-  url 'https://www.apache.org/dist/httpd/httpd-2.4.3.tar.gz'
-  sha1 '845ca56816b0352c7759b6b8f47bd012c0864efd'
-  version '2.4.3'
+  url 'http://mirror.lividpenguin.com/pub/apache/httpd/httpd-2.4.4.tar.bz2'
+  sha1 '0c5ab7f876aa10fbe8bfab2c34f8dd3dc76db16c'
+  version '2.4.4'
 
   skip_clean ['bin', 'sbin']
 
