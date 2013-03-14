@@ -7,7 +7,7 @@ class Apache22 < Formula
   sha1 'fc8a99946b1fab936a05c77abad050590a4deb82'
   version '2.2.24'
 
-  skip_clean ['bin', 'sbin']
+  skip_clean ['bin', 'sbin', 'logs']
 
   def install
     args = [

@@ -7,7 +7,7 @@ class Apache24 < Formula
   sha1 '0c5ab7f876aa10fbe8bfab2c34f8dd3dc76db16c'
   version '2.4.4'
 
-  skip_clean ['bin', 'sbin']
+  skip_clean ['bin', 'sbin', 'logs']
 
   depends_on 'pcre'
 
