@@ -16,7 +16,7 @@ class Apache24 < Formula
     ["apr-1.4.6", "apr-util-1.4.1"].each do |tb|
       curl "-s", "-o", "#{tb}.tar.gz", "https://www.apache.org/dist/apr/#{tb}.tar.gz"
       system "tar -xzf #{tb}.tar.gz"
-      dir = tb.reverse.split('-', 2).map(&:reverse).reverse[0]
+      dir = tb.rpartition('-')[0]
       FileUtils.mv(tb, "srclib/#{dir}")
     end
   end
