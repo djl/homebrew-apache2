@@ -25,6 +25,6 @@ class Apache22 < Formula
     system "make install"
 
     # create logs directory
-    Dir.mkdir "#{prefix}/logs"
+    Dir.mkdir "#{prefix}/logs" unless File.directory? "#{prefix}/logs"
   end
 end
