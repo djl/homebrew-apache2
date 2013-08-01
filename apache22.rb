@@ -2,9 +2,8 @@ require 'formula'
 
 class Apache22 < Formula
   homepage 'https://httpd.apache.org/'
-  url 'http://apache.mirror.anlx.net/httpd/httpd-2.2.24.tar.gz'
-  sha1 'fc8a99946b1fab936a05c77abad050590a4deb82'
-  version '2.2.24'
+  url 'http://apache.mirrors.pair.com/httpd/httpd-2.2.25.tar.gz'
+  sha1 '1e793eb477c65dfa58cdf47f7bf78d8cdff58091'
 
   skip_clean ['bin', 'sbin', 'logs']
 
