@@ -55,7 +55,7 @@ class Apache24 < Formula
           prefix:        #{prefix}
           exec_prefix:   ${prefix}
           bindir:        ${exec_prefix}/bin
-          sbindir:       ${bindir}
+          sbindir:       ${exec_prefix}/bin
           libdir:        ${exec_prefix}/lib
           libexecdir:    #{lib}/apache2/modules
           mandir:        #{man}
