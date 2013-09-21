@@ -11,6 +11,9 @@ class Apache24 < Formula
   depends_on 'pcre'
   depends_on 'lua' => :optional
 
+  conflicts_with 'apache22',
+    :because => "apache24 and apache22 install the same binaries."
+
   # Apache 2.4 no longer bundles apr or apr-util so we have to fetch
   # it manually for each build
   def fetch_apr

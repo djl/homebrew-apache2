@@ -8,6 +8,9 @@ class Apache22 < Formula
 
   skip_clean ['bin', 'sbin', 'logs']
 
+  conflicts_with 'apache24',
+    :because => "apache22 and apache24 install the same binaries."
+
   def install
     args = [
       "--prefix=#{prefix}",
