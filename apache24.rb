@@ -3,7 +3,7 @@ require 'formula'
 
 class Apache24 < Formula
   homepage 'https://httpd.apache.org/'
-  url 'http://apache.mirrors.pair.com/httpd/httpd-2.4.7.tar.bz2'
+  url 'http://mirror.cc.columbia.edu/pub/software/apache/httpd/httpd-2.4.7.tar.bz2'
   sha1 '19ed9ee56462e44d61a093ea57e964cf0af05c0e'
 
   skip_clean ['bin', 'sbin', 'logs']
