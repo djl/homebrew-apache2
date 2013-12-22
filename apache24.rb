@@ -1,4 +1,3 @@
-require 'fileutils'
 require 'formula'
 
 class Apache24 < Formula
@@ -48,8 +47,8 @@ class Apache24 < Formula
     system "make"
     system "make install"
 
-    # create logs directory
-    FileUtils.mkdir_p "#{var}/log/apache2"
+    (var+"log/apache2").mkpath
+    (var+"run/apache2").mkpath
   end
 
   def apache_layout
@@ -72,7 +71,7 @@ class Apache24 < Formula
           cgidir:        #{var}/apache2/cgi-bin
           includedir:    ${prefix}/include/apache2
           localstatedir: #{var}/apache2
-          runtimedir:    #{var}/log/apache2
+          runtimedir:    #{var}/run/apache2
           logfiledir:    #{var}/log/apache2
           proxycachedir: ${localstatedir}/proxy
       </Layout>

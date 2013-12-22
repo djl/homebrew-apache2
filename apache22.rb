@@ -1,4 +1,3 @@
-require 'fileutils'
 require 'formula'
 
 class Apache22 < Formula
@@ -27,8 +26,8 @@ class Apache22 < Formula
     system "make"
     system "make install"
 
-    # create logs directory
-    FileUtils.mkdir_p "#{var}/log/apache2"
+    (var+"log/apache2").mkpath
+    (var+"run/apache2").mkpath
   end
 
   def apache_layout
