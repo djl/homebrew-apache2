@@ -49,7 +49,7 @@ class Apache22 < Formula
           htdocsdir:     #{var}/apache2/htdocs
           manualdir:     #{doc}/manual
           cgidir:        #{var}/apache2/cgi-bin
-          includedir:    ${prefix}/include
+          includedir:    ${prefix}/include/apache2
           localstatedir: #{var}/apache2
           runtimedir:    #{var}/log/apache2
           logfiledir:    #{var}/log/apache2
