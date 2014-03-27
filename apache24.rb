@@ -2,8 +2,8 @@ require 'formula'
 
 class Apache24 < Formula
   homepage 'https://httpd.apache.org/'
-  url 'http://mirror.cc.columbia.edu/pub/software/apache/httpd/httpd-2.4.7.tar.bz2'
-  sha1 '19ed9ee56462e44d61a093ea57e964cf0af05c0e'
+  url 'http://mirror.cc.columbia.edu/pub/software/apache/httpd/httpd-2.4.9.tar.gz'
+  sha1 '50496e51605a3d852c183a7c667c25bcc7ee658d'
 
   skip_clean ['bin', 'sbin', 'logs']
 
