@@ -9,6 +9,9 @@ class Apache24 < Formula
 
   depends_on 'pcre'
   depends_on 'lua' => :optional
+  depends_on 'openssl' if build.with? 'homebrew-openssl'
+
+  option 'with-homebrew-openssl', 'Include OpenSSL support via Homebrew'
 
   conflicts_with 'apache22',
     :because => "apache24 and apache22 install the same binaries."
@@ -41,6 +44,9 @@ class Apache24 < Formula
       "--with-pcre=#{Formula.factory('pcre').prefix}",
       "--enable-layout=Homebrew"
     ]
+    if build.with? 'homebrew-openssl'
+      args << "--with-ssl=" + Formula['openssl'].opt_prefix.to_s
+    end
     args << "--enable-lua" if build.with? 'lua'
 
     system './configure', *args
