@@ -2,7 +2,7 @@ require 'formula'
 
 class Apache24 < Formula
   homepage 'https://httpd.apache.org/'
-  url 'http://mirrors.muzzy.org.uk/apache/httpd/httpd-2.4.20.tar.gz'
+  url 'https://www.apache.org/dist/httpd/httpd-2.4.20.tar.gz'
   sha256 'e77482a46e5b6971ba6181b71a3c0ed1dbf3fa83810bf767c6320f0c621261e4'
 
   skip_clean ['bin', 'sbin', 'logs']
