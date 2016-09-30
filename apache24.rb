@@ -42,7 +42,7 @@ class Apache24 < Formula
       "--with-mpm=prefork",
       "--with-included-apr",
       "--enable-mods-shared=all",
-      "--with-pcre=#{Formula.factory('pcre').prefix}",
+      "--with-pcre=#{Formulary.factory('pcre').prefix}",
       "--enable-layout=Homebrew"
     ]
     if build.with? 'homebrew-openssl'
